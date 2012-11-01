@@ -484,13 +484,3 @@ a.control:active {
 
 /* @end options*/
 /* @end Classes */
-body {
-  margin: 0 auto;
-  text-align: center;
-}
-
-.pattern {
-  margin: 20px 10px;
-  text-align: left;
-  border-bottom: 2px dotted #ccc;
-}

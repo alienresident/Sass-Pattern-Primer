@@ -1,7 +1,7 @@
 #Sassy Pattern Primer
 This is a fork of Adactio/Jeremy Keith's [Pattern Primer] (https://github.com/adactio/Pattern-Primer). I have convert the css to Sass and Compass. I have tried to stick to the original CSS as closely as possible by using the same organization and output. This is to serve as a basis for my own projects.
 
-##Original Adactio README 
+##Original Adactio README
 
 Create little snippets of markup and save them to the "patterns folder." The pattern primer will generate a list of all the patterns in that folder. You will see the pattern rendered as HTML. You will also get the source displayed in a textarea.
 
