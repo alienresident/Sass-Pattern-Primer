@@ -1,0 +1,21 @@
+@import "compass/typography";
+@import "compass/css3";
+
+@import "partials/_mixins";
+@import "partials/_variables";
+@import "partials/patterns/_reset";
+@import "partials/patterns/_typography";
+@import "partials/patterns/_links";
+@import "partials/patterns/_forms";
+@import "partials/patterns/_classes";
+
+
+body {
+  margin: 0 auto;
+  text-align: center;
+}
+.pattern {
+  margin: 20px 10px;
+  text-align: left;
+  border-bottom:2px dotted #ccc;
+}
