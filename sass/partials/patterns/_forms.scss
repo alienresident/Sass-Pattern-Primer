@@ -43,7 +43,7 @@ input[type="submit"] {
 	@include simple-background-gradient($button-color, $button-gradient-pos, $button-gradient-stop-1, $button-gradient-stop-2);
 	@include border-radius($button-border-radius);
   &:hover,
-  &:focus{
+  &:focus {
   	outline: none;
   	@include simple-background-gradient($button-hover-color, $button-hover-gradient-pos, $button-hover-gradient-stop-1, $button-hover-gradient-stop-2);
   }  
