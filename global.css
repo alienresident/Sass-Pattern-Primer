@@ -1,0 +1,486 @@
+/* @group Reset */
+/* Based on http://meyerweb.com/eric/tools/css/reset/ */
+html, body, applet, object, iframe, svg,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  text-decoration: inherit;
+  text-align: left;
+  background: transparent;
+}
+
+header, footer, figure, details, hgroup,
+section, article, nav, aside {
+  display: block;
+}
+
+img, object, audio, video, svg {
+  max-width: 100%;
+}
+
+/* @end Reset */
+/* @group Typography */
+html {
+  border-top: 0.5em solid #669933;
+  background-color: #eeeeee;
+}
+
+body {
+  background-color: #fefefe;
+  background: rgba(255, 255, 255, 0.9);
+  margin: 0 2.5%;
+  padding: 0 2.5%;
+  font-size: 100%;
+  line-height: 1.875;
+  font-family: Palatino, Cambria, Georgia, serif;
+  color: #333333;
+  border-left: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+  border-color: rgba(0, 0, 0, 0.13);
+}
+
+h1 {
+  font-family: Palatino, Cambria, Georgia, serif;
+  font-weight: normal;
+  font-size: 2.5em;
+  line-height: 1.125;
+  padding-top: 1em;
+  margin-bottom: 0.3em;
+  color: #444444;
+  border-bottom: 0.2em solid #669933;
+}
+
+h2 {
+  font-family: Palatino, Cambria, Georgia, serif;
+  font-weight: normal;
+  font-size: 1.875em;
+  line-height: 1.5;
+  padding-top: 0.8333em;
+  margin-bottom: 0.7em;
+  color: #555555;
+  border-bottom: 0.13333em solid #669933;
+}
+
+h3 {
+  font-family: Palatino, Cambria, Georgia, serif;
+  font-weight: normal;
+  font-size: 1.5625em;
+  line-height: 1.4;
+  padding-top: 1em;
+  margin-bottom: 0.7em;
+  color: #666666;
+  border-bottom: 0.1em solid #669933;
+}
+
+h4 {
+  font-family: Palatino, Cambria, Georgia, serif;
+  font-weight: normal;
+  font-size: 1.25em;
+  line-height: 1.5;
+  padding-top: 1em;
+  margin-bottom: 1em;
+  color: #777777;
+  border: none;
+}
+
+h5 {
+  font-family: Palatino, Cambria, Georgia, serif;
+  font-weight: normal;
+  font-size: 1.125em;
+  line-height: 1.6667;
+  padding-top: 1.1111em;
+  margin: 0;
+  color: #888888;
+  border: none;
+}
+
+h6 {
+  font-weight: normal;
+  font-size: inherit;
+  line-height: inherit;
+  padding-top: 1em;
+  margin: 0;
+  color: #999999;
+  border: none;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+i, em {
+  font-style: italic;
+}
+
+hr {
+  border: none;
+  height: 0.1em;
+  background: #cccccc;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+p, ul, ol, hr, table, form, fieldset {
+  margin: 1.25em 0;
+}
+
+li {
+  list-style-position: inside;
+  margin-left: 1em;
+  text-indent: -1em;
+}
+
+blockquote {
+  margin: 1em;
+  border-top: 0.1em solid #cccccc;
+  border-bottom: 0.1em solid #cccccc;
+  padding: 0 1em;
+  font-family: Palatino, Cambria, Georgia, serif;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 1.25em;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  color: #888888;
+  border-color: rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 0.25em;
+  -moz-border-radius: 0.25em;
+  -o-border-radius: 0.25em;
+  border-radius: 0.25em;
+}
+blockquote em {
+  font-weight: normal;
+}
+
+figcaption {
+  font-family: Palatino, Cambria, Georgia, serif;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 0.857em;
+  line-height: 1.4286;
+  color: #666666;
+}
+
+article > p,
+article section > p {
+  font-size: 1.125em;
+  line-height: 1.6667;
+  word-spacing: 0.1em;
+  margin: 1.1111em 0;
+  /*	Does this improve the reading experience?
+  	-webkit-hyphens: auto;
+  	-moz-hyphens: auto;
+  	hyphens: auto;
+  	text-align: justify;
+  */
+}
+
+article footer + p:first-letter,
+article section > h2 + p:first-letter,
+article section > p:first-child:first-letter {
+  display: inline-block;
+  float: left;
+  font-family: Calibri, "Helvetica Neue", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 4em;
+  line-height: 0.75;
+  letter-spacing: -0.025em;
+  margin-right: 0.05em;
+  background-color: #669933;
+  color: white;
+  border: 1px solid #669933;
+}
+
+time {
+  display: block;
+  text-align: right;
+  font-family: body-font-family;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  line-height: 1.6667;
+}
+time:before {
+  content: "—";
+}
+
+/* @end Typography */
+/* @group Links */
+a {
+  text-decoration: none;
+  border-bottom: 1px dotted #336699;
+  white-space: pre-wrap;
+}
+a:link, a:visited {
+  border-bottom: 1px dotted #336699;
+}
+a[href]:hover, a[href]:focus {
+  border-bottom: 1px dotted #cc0033;
+}
+a:active {
+  border-bottom: 1px dotted #990000;
+}
+.logo a, h1 a, h2 a, h3 a {
+  border: none;
+}
+
+/* @end Links */
+/* @group Forms */
+label {
+  cursor: pointer;
+}
+
+input[type],
+textarea,
+select {
+  background-color: white;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0.125em;
+  border: 1px solid #cccccc;
+  -webkit-border-radius: 0.25em;
+  -moz-border-radius: 0.25em;
+  -o-border-radius: 0.25em;
+  border-radius: 0.25em;
+}
+input[type]:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #666666;
+}
+
+input[type="checkbox"],
+input[type="radio"],
+input[type="image"] {
+  width: auto;
+}
+
+input[required],
+textarea[required] {
+  border-color: #999999;
+}
+
+button,
+input[type="button"],
+input[type="submit"] {
+  width: auto;
+  text-align: center;
+  font-family: Calibri, "Helvetica Neue", Arial, sans-serif;
+  font-size: inherit;
+  font-weight: normal;
+  font-style: normal;
+  border: 1px solid #666666;
+  cursor: pointer;
+  padding: 0.5em 1em;
+  line-height: 1;
+  color: white;
+  background-color: #336699;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4477aa), color-stop(100%, #225588));
+  background-image: -webkit-linear-gradient(top, #4477aa, #225588);
+  background-image: -moz-linear-gradient(top, #4477aa, #225588);
+  background-image: -o-linear-gradient(top, #4477aa, #225588);
+  background-image: linear-gradient(top, #4477aa, #225588);
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -o-border-radius: 1em;
+  border-radius: 1em;
+}
+button:hover, button:focus,
+input[type="button"]:hover,
+input[type="button"]:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  outline: none;
+  color: white;
+  background-color: #cc0033;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #dd0044), color-stop(100%, #bb0022));
+  background-image: -webkit-linear-gradient(top, #dd0044, #bb0022);
+  background-image: -moz-linear-gradient(top, #dd0044, #bb0022);
+  background-image: -o-linear-gradient(top, #dd0044, #bb0022);
+  background-image: linear-gradient(top, #dd0044, #bb0022);
+}
+button:active,
+input[type="button"]:active,
+input[type="submit"]:active {
+  color: white;
+  background-color: #990000;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #880000), color-stop(100%, #aa0000));
+  background-image: -webkit-linear-gradient(top, #880000, #aa0000);
+  background-image: -moz-linear-gradient(top, #880000, #aa0000);
+  background-image: -o-linear-gradient(top, #880000, #aa0000);
+  background-image: linear-gradient(top, #880000, #aa0000);
+}
+
+/* @group search */
+[role="search"] {
+  position: relative;
+  background-color: white;
+  border: 1px solid #cccccc;
+  padding: 0 0.75em;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -o-border-radius: 1em;
+  border-radius: 1em;
+}
+[role="search"] input {
+  border: none;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+[role="search"] input[type="image"] {
+  background-color: white;
+  position: absolute;
+  width: 0.9375em;
+  top: 0.2em;
+  right: 0.6em;
+  padding: 0.2em 0.2em;
+}
+
+/* @end search */
+/* @end Forms */
+/* @group Classes */
+/* @group pagination */
+.pagination {
+  font-family: Calibri, "Helvetica Neue", Arial, sans-serif;
+}
+
+.pagination li {
+  display: inline;
+  margin-left: 0;
+  text-indent: 0;
+}
+
+.pagination a {
+  display: inline-block;
+  padding: 0.5em 1em;
+  line-height: 1;
+  margin: 0.1em;
+  border: 1px solid #666666;
+  -webkit-border-radius: 0.25em;
+  -moz-border-radius: 0.25em;
+  -o-border-radius: 0.25em;
+  border-radius: 0.25em;
+  background-clip: padding-box;
+}
+
+.pagination a:link,
+.pagination a:visited {
+  color: white;
+  background-color: #336699;
+}
+
+.pagination a[href]:hover,
+.pagination a[href]:focus {
+  color: white;
+  background-color: #cc0033;
+}
+
+.pagination a:active {
+  color: white;
+  background-color: #990000;
+}
+
+/* @end pagination*/
+/* @group control */
+a.control {
+  font-family: Calibri, "Helvetica Neue", Arial, sans-serif;
+  display: inline-block;
+  font-size: 1.5em;
+  padding: 0.5em 0.75em;
+  line-height: 1;
+  border: 1px solid #666666;
+  -webkit-border-radius: 0.25em;
+  -moz-border-radius: 0.25em;
+  -o-border-radius: 0.25em;
+  border-radius: 0.25em;
+  background-clip: padding-box;
+}
+a.control:link, a.control:visited {
+  color: white;
+  background-color: #336699;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4477aa), color-stop(100%, #225588));
+  background-image: -webkit-linear-gradient(top, #4477aa, #225588);
+  background-image: -moz-linear-gradient(top, #4477aa, #225588);
+  background-image: -o-linear-gradient(top, #4477aa, #225588);
+  background-image: linear-gradient(top, #4477aa, #225588);
+}
+a.control:hover, a.control:focus {
+  outline: none;
+  color: white;
+  background-color: #cc0033;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #dd0044), color-stop(100%, #bb0022));
+  background-image: -webkit-linear-gradient(top, #dd0044, #bb0022);
+  background-image: -moz-linear-gradient(top, #dd0044, #bb0022);
+  background-image: -o-linear-gradient(top, #dd0044, #bb0022);
+  background-image: linear-gradient(top, #dd0044, #bb0022);
+}
+a.control:active {
+  color: white;
+  background-color: #990000;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #880000), color-stop(100%, #aa0000));
+  background-image: -webkit-linear-gradient(top, #880000, #aa0000);
+  background-image: -moz-linear-gradient(top, #880000, #aa0000);
+  background-image: -o-linear-gradient(top, #880000, #aa0000);
+  background-image: linear-gradient(top, #880000, #aa0000);
+}
+
+/* @end control */
+/* @group feedback */
+.feedback {
+  background-color: #ffffcc;
+  padding: 0.125em 1em;
+  margin: 1em 0;
+  border-top: 0.125em solid #cccc99;
+  -webkit-border-radius: 0.25em;
+  -moz-border-radius: 0.25em;
+  -o-border-radius: 0.25em;
+  border-radius: 0.25em;
+  background-clip: padding-box;
+}
+
+.error {
+  background-color: #ffcccc;
+  border-color: #cc9999;
+}
+
+/* @end feedback */
+/* @group options */
+.options {
+  list-style: none;
+  border-top: 1px solid #cccccc;
+}
+
+.options li {
+  text-indent: 0;
+  font-family: Calibri, "Helvetica Neue", Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-weight: bold;
+  margin: 0;
+  padding: 0.3125em 0.625em;
+  border-bottom: 1px solid #cccccc;
+}
+
+.options a {
+  display: block;
+  border: none;
+}
+
+/* @end options*/
+/* @end Classes */

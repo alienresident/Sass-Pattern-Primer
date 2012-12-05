@@ -1,0 +1,80 @@
+/* @group Forms */
+
+label {
+	cursor: pointer;
+}
+input[type],
+textarea,
+select {
+	background-color: $forms-background-color;
+	width: 100%;
+	font-family: inherit;
+	font-size: inherit;
+	@include simple-padding($forms-padding);
+	@include simple-border($forms-border-pos, $forms-border-width, $forms-border-style, $forms-border-color);
+	@include border-radius($forms-border-radius);
+  &:focus {
+  	outline: none;
+  	border-color: $forms-focus-border-color;
+  }
+}
+input[type="checkbox"],
+input[type="radio"],
+input[type="image"] {
+	width: auto;
+}
+input[required],
+textarea[required] {
+	border-color: $forms-required-border-color;
+}
+button,
+input[type="button"],
+input[type="submit"] {
+	width: auto;
+	text-align: center;
+	font-family: $button-font-family;
+	font-size: inherit;
+	font-weight: normal;
+	font-style: normal;
+	@include simple-border($button-border-pos, $button-border-width, $button-border-style, $button-border-color);
+	cursor: pointer;
+	@include simple-padding($button-padding);
+	line-height: 1;
+	@include simple-background-gradient($button-color, $button-gradient-pos, $button-gradient-stop-1, $button-gradient-stop-2);
+	@include border-radius($button-border-radius);
+  &:hover,
+  &:focus {
+  	outline: none;
+  	@include simple-background-gradient($button-hover-color, $button-hover-gradient-pos, $button-hover-gradient-stop-1, $button-hover-gradient-stop-2);
+  }  
+  &:active {
+  	@include simple-background-gradient($button-active-color, $button-active-gradient-pos, $button-active-gradient-stop-1, $button-active-gradient-stop-2);
+	}
+}
+
+/* @group search */
+
+[role="search"] {
+	position: relative;
+	background-color: $search-background-color;
+	@include simple-border($search-border-pos, $search-border-width, $search-border-style, $search-border-color);
+	@include simple-padding($search-padding);
+	@include border-radius($search-border-radius);
+  input {
+  	@include simple-border($search-input-border-pos, $search-input-border-width, $search-input-border-style, $search-input-border-color);
+  	-webkit-appearance: none;
+  	@include border-radius($search-input-border-radius);
+  }
+  input[type="image"] {
+    background-color: $search-image-background-color;
+  	position: absolute;
+  	width: $search-image-width;
+  	top: $search-image-top;
+  	right: $search-image-right;
+  	@include simple-padding($search-image-padding);
+  }
+}
+
+/* @end search */
+
+/* @end Forms */
