@@ -1,8 +1,8 @@
 #Sass Pattern Primer
-This is a fork of my sass version of [Pattern Primer]  (https://github.com/alienresident/Pattern-Primer) which is a fork of Adactio/Jeremy Keith's [Pattern Primer] 
-(https://github.com/adactio/Pattern-Primer). I thought it would be useful to keep a straight sass port of Pattern-Primer but wanted to go beyond it for my own development.
+This is a fork of my sass port of [Pattern Primer]  (https://github.com/alienresident/Pattern-Primer) which is forked from Adactio/Jeremy Keith's [Pattern Primer] 
+(https://github.com/adactio/Pattern-Primer). 
 
-I will be adding some libraries and other HTML patterns (snippets) to this version.
+I will be adding some libraries and other HTML patterns (snippets) for my own projects.
 
 ##Original Adactio README
 
