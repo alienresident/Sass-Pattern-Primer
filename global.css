@@ -1025,7 +1025,6 @@ input[type="submit"].active:active {
   background-image: linear-gradient(top, #003059, #004b8c);
 }
 
-button[name="eventSubmit_doCancel"],
 input.cancel,
 input[type="button"][value="Cancel"],
 input[type="submit"][value="Cancel"] {
@@ -1037,9 +1036,7 @@ input[type="submit"][value="Cancel"] {
   background-image: -moz-linear-gradient(top, #ee5f5b, #bd362f);
   background-image: linear-gradient(top, #ee5f5b, #bd362f);
 }
-button[name="eventSubmit_doCancel"]:hover, button[name="eventSubmit_doCancel"]:focus,
-input.cancel:hover,
-input.cancel:focus,
+input.cancel:hover, input.cancel:focus,
 input[type="button"][value="Cancel"]:hover,
 input[type="button"][value="Cancel"]:focus,
 input[type="submit"][value="Cancel"]:hover,
@@ -1053,7 +1050,6 @@ input[type="submit"][value="Cancel"]:focus {
   background-image: -moz-linear-gradient(top, #a32f29, #d63e36);
   background-image: linear-gradient(top, #a32f29, #d63e36);
 }
-button[name="eventSubmit_doCancel"]:active,
 input.cancel:active,
 input[type="button"][value="Cancel"]:active,
 input[type="submit"][value="Cancel"]:active {

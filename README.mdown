@@ -1,8 +1,12 @@
 #Sass Pattern Primer
-This is a fork of my sass port of [Pattern Primer]  (https://github.com/alienresident/Pattern-Primer) which is forked from Adactio/Jeremy Keith's [Pattern Primer] 
-(https://github.com/adactio/Pattern-Primer). 
+This is a fork of my sass port of [Pattern Primer]  (https://github.com/alienresident/Pattern-Primer) which is forked from Adactio/Jeremy Keith's [Pattern Primer] (https://github.com/adactio/Pattern-Primer). 
 
-I will be adding some libraries and other HTML patterns (snippets) for my own projects.
+I have reworked the Pattern Primer to use Jonathan Snook's [SMACSS] (http://smacss.com/) as an organizing principle. I've separated the partials into base (reset, forms, page, links, and typography) and modules (pagination, control, feedback, and options). I have added normalize and formalize with legacy support to the reset options (see: partials/base/_reset).
+
+The intended way to override the original Adactio styling is to change the variables in partials/variables/theme/_variables. This follows the SMACSS paradigm.
+
+This is a work in progress and any feedback is welcome.
+
 
 ##Original Adactio README
 
