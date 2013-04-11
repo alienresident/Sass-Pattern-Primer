@@ -1,0 +1,15 @@
+$experimental-support-for-microsoft: false; // removes support for MS vendor prefix
+$experimental-support-for-khtml: false;
+$experimental-support-for-opera: false;
+
+@import "partials/variables/base/_page";
+@import "partials/variables/base/_typography";
+@import "partials/variables/base/_forms";
+@import "partials/variables/base/_links";
+
+@import "partials/variables/modules/_control";
+@import "partials/variables/modules/_feedback";
+@import "partials/variables/modules/_options";
+@import "partials/variables/modules/_pagination";
+
+

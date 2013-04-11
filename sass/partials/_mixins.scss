@@ -21,36 +21,26 @@
                       );
 }
 
-@mixin simple-border($side: false, $color: #999, $style: "solid", $width: 1px) {
-  @if $side == none {
-    border: none;
-  } @else if $side {
-    border-#{$side}: $color $style $width;
-  }
-  @else {
-    border: $color $style $width;
-  }
-}
+
 @mixin simple-background-gradient($button-color, $background-gradient-pos, $background-gradient-1, $background-gradient-2) {
   color: $button-color;
-  background-color: mix($background-gradient-1, $background-gradient-2);
+  // provide background color for older IEs
+  background-color: background-color-mix($background-gradient-1, $background-gradient-2);
   @include background-image(linear-gradient($background-gradient-pos, $background-gradient-1, $background-gradient-2));
 }
-@mixin simple-margin($amount, $side: false) {
-  @if $side {
-     margin-#{$side}: $amount;
-   }
-   @else {
-     margin: $amount;
-   }
-}
-@mixin simple-padding($amount, $side: false) {
-  @if $side {
-     padding-#{$side}: $amount;
-   }
-   @else {
-     padding: $amount;
-   }
+
+@mixin bounding-box($type, $amount: false, $side: false, $color: false, $style: false, $width: false) {
+  @if $type == 'border' and $side == none {
+    #{$type}: $side;
+  } @else if $type == 'border' and $side {
+    #{$type}-#{$side}: $color $style $width;
+  } @else if $type == 'border' {
+    #{$type}: $color $style $width;
+  } @else  if $side {
+    #{$type}-#{$side}: $amount;
+  } @else {
+    #{$type}: $amount;
+  }
 }
 
 @mixin type-size($size, $leading: false) {
@@ -70,7 +60,11 @@
   @if $after { &:after { content: $content; } }
 }
 
-// Functions
-@function calc-em($target-px, $context) {
-  @return ($target-px / $context) * 1em;
+@mixin breakpoint-back {
+  // Cause you can't extend silently from a media query
+  line-height: 1.5em;
+  padding: .25em 1em;
+  margin: 0 0 .25em 0;
+  background: #ddd;
+  color: #999;
 }
