@@ -22,8 +22,8 @@
 }
 
 
-@mixin simple-background-gradient($button-color, $background-gradient-pos, $background-gradient-1, $background-gradient-2) {
-  color: $button-color;
+@mixin simple-background-gradient($color, $background-gradient-pos, $background-gradient-1, $background-gradient-2) {
+  color: $color;
   // provide background color for older IEs
   background-color: background-color-mix($background-gradient-1, $background-gradient-2);
   @include background-image(linear-gradient($background-gradient-pos, $background-gradient-1, $background-gradient-2));
@@ -58,13 +58,4 @@
 @mixin content-before-after($content, $before: default, $after:false ) {
   @if $before { &:before { content: $content; } }
   @if $after { &:after { content: $content; } }
-}
-
-@mixin breakpoint-back {
-  // Cause you can't extend silently from a media query
-  line-height: 1.5em;
-  padding: .25em 1em;
-  margin: 0 0 .25em 0;
-  background: #ddd;
-  color: #999;
 }
