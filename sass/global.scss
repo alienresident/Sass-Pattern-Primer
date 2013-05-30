@@ -1,44 +1,44 @@
+// Basic scaffolding
+
 @import "compass/typography";
 @import "compass/css3";
 
-@import "partials/_mixins";
+@import "partials/_browsers";
+@import "partials/_colors";
+@import "partials/_extendables";
 @import "partials/_functions";
-@import "partials/variables/_variables";
-@import "partials/variables/theme/_variables";
+@import "partials/_mixins";
+@import "partials/_variables";
 
-@import "partials/base/_reset";
-@import "partials/base/_page";
-@import "partials/base/_typography";
-@import "partials/base/_links";
-@import "partials/base/_forms";
+@import "compass-pattern-primer/reset"; 
 
-@import "partials/modules/_modules";
+@import "compass-pattern-primer/partials/"; 
+@import "partials/variables/theme/_overrides";
 
-body {
-  margin: 0 auto;
-  text-align: center;
-}
+@import "compass-pattern-primer/base";
+@import "compass-pattern-primer/modules";
+
+@import "base/_page";
+
+@import "modules/_header";
+@import "modules/_footer";
+
+@import "layout/_page";
+
+@import "state/_page";
+@import "state/_header";
+@import "state/_footer";
+
+@import "theme/_page";
+@import "modules/_footer";
+
+// some default styling for pattern-primer.html. Most likely you'll want to delete this.
 .pattern {
-    clear: both;
-    overflow: hidden;
-}
-.pattern .display {
-    width: 65%;
-    float: left;
-}
-.pattern .source {
-    width: 30%;
-    float: right;
-}
-.pattern .source textarea {
-    width: 90%;
-}
-.pattern {
+  clear: both;
+  overflow: hidden;
   margin: 20px 10px;
   text-align: left;
-
 }
-//.pattern .source { display:none; width: none; }
 .pattern .display {
-    //width:100%;
+  width: 100%;
 }
